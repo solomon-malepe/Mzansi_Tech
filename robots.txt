@@ -1,0 +1,6 @@
+# MzansiTech — https://www.mzansitech.co.za/
+User-agent: *
+Allow: /
+Disallow: /thank-you.html
+
+Sitemap: https://www.mzansitech.co.za/sitemap.xml

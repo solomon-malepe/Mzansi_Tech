@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en-ZA" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>MzansiTech | Web Design & Development in South Africa</title>
+  <meta name="description" content="MzansiTech builds fast, mobile-first e-commerce and business websites for South African companies. Rand pricing, .co.za domain and hosting included, WhatsApp support." />
+  <link rel="canonical" href="https://www.mzansitech.co.za/" />
+  <meta name="theme-color" content="#070b14" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="MzansiTech" />
+  <meta property="og:locale" content="en_ZA" />
+  <meta property="og:title" content="MzansiTech | Web Design & Development in South Africa" />
+  <meta property="og:description" content="Fast, mobile-first e-commerce and business websites for South African companies. Rand pricing, hosting included, WhatsApp support." />
+  <meta property="og:url" content="https://www.mzansitech.co.za/" />
+  <meta property="og:image" content="https://www.mzansitech.co.za/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MzansiTech | Web Design & Development in South Africa" />
+  <meta name="twitter:description" content="Fast, mobile-first websites for South African businesses. Rand pricing, hosting included." />
+  <meta name="twitter:image" content="https://www.mzansitech.co.za/assets/og-image.png" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <link rel="preload" href="assets/fonts/inter-latin-567244.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/sora-latin-4fa0aa.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("mzansitech-theme");
+        if (t) document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+  <script src="main.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "MzansiTech",
+    "alternateName": "MzansiTech Web Studio",
+    "description": "South African web design and development studio building e-commerce stores, business websites and landing pages.",
+    "url": "https://www.mzansitech.co.za/",
+    "logo": "https://www.mzansitech.co.za/assets/favicon-512.png",
+    "image": "https://www.mzansitech.co.za/assets/og-image.png",
+    "telephone": "+27740415849",
+    "email": "solomonmalepe8@gmail.com",
+    "priceRange": "R2500 - R14500+",
+    "currenciesAccepted": "ZAR",
+    "paymentAccepted": "EFT, Bank deposit",
+    "founder": { "@type": "Person", "name": "Omphile Malepe", "sameAs": "https://www.linkedin.com/in/omphile-malepe-0b220729a/" },
+    "address": { "@type": "PostalAddress", "addressCountry": "ZA" },
+    "areaServed": { "@type": "Country", "name": "South Africa" },
+    "sameAs": [
+      "https://www.linkedin.com/in/omphile-malepe-0b220729a/",
+      "https://omphile-malepe-portfolio.netlify.app/"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Website packages",
+      "itemListElement": [
+        { "@type": "Offer", "name": "Mzansi Basic", "price": "2500", "priceCurrency": "ZAR" },
+        { "@type": "Offer", "name": "Mzansi Pro", "price": "5500", "priceCurrency": "ZAR" },
+        { "@type": "Offer", "name": "Mzansi Biz", "price": "9500", "priceCurrency": "ZAR" },
+        { "@type": "Offer", "name": "Mzansi Store", "price": "14500", "priceCurrency": "ZAR", "description": "Online store, priced from" }
+      ]
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does a website cost in South Africa?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Our packages start at R2,500 for a single-page site, R5,500 for a 3–5 page business website and R9,500 for a 5–10 page site with a blog and SEO. Online stores start from R14,500. Every package includes one year of .co.za domain registration and hosting." }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to build a website?",
+        "acceptedAnswer": { "@type": "Answer", "text": "A single-page site typically goes live within one week. Most business websites launch in two to three weeks once we have your content, logo and images." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you work with businesses outside my province?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. MzansiTech works remotely with businesses in all nine provinces — Gauteng, Limpopo, Mpumalanga, North West, Free State, KwaZulu-Natal, Eastern Cape, Northern Cape and the Western Cape. Everything is handled over WhatsApp, email and video calls." }
+      },
+      {
+        "@type": "Question",
+        "name": "Will my website work well on mobile data?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. We build mobile-first and keep pages light, because most South Africans browse on phones and pay for data by the gigabyte. Images are compressed and pages are kept lean so they load quickly on 3G and LTE." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my customers' information protected under POPIA?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Contact forms are built to collect only what you need, served over HTTPS, and paired with a privacy notice explaining how information is used — in line with the Protection of Personal Information Act." }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <div class="progress" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="MzansiTech home">
+        <img class="brand-mark" src="assets/logo-mark.svg" alt="" width="42" height="42" />
+        <span class="brand-text">
+          <span class="brand-name">Mzansi<span>Tech</span></span>
+          <span class="brand-tag">Web Studio &middot; South Africa</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="nav-links" aria-label="Main navigation">
+        <a href="index.html" class="active" aria-current="page">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn btn-primary btn-sm nav-cta" href="contact.html">Get a free quote</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch to light theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <a class="btn btn-primary btn-sm btn-quote" href="contact.html">Get a free quote</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="header-rule" aria-hidden="true"></div>
+  </header>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="container hero">
+      <div class="hero-grid">
+        <div>
+          <div class="badge reveal">
+            <span class="badge-dot" aria-hidden="true"></span>
+            <span>Proudly South African web studio</span>
+          </div>
+
+          <h1 class="reveal" data-delay="1">Websites that turn <span class="text-grad">Mzansi businesses</span> into brands.</h1>
+
+          <p class="hero-lead reveal" data-delay="2">
+            MzansiTech designs and builds fast, mobile-first websites and online stores for South African
+            businesses &mdash; priced in Rands, hosted on your own .co.za domain, and supported over WhatsApp
+            long after launch.
+          </p>
+
+          <div class="hero-cta reveal" data-delay="3">
+            <a class="btn btn-primary btn-lg" href="contact.html">
+              Get a free quote
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn-secondary btn-lg" href="portfolio.html">See our work</a>
+          </div>
+
+          <ul class="hero-points reveal" data-delay="4">
+            <li>
+              <span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              <span><strong>Domain &amp; hosting for 12 months</strong> included in every package.</span>
+            </li>
+            <li>
+              <span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              <span><strong>Built light for SA data prices</strong> &mdash; quick to load on 3G and LTE.</span>
+            </li>
+            <li>
+              <span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              <span><strong>POPIA-minded contact forms</strong> and HTTPS on every page.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal" data-delay="2">
+          <div class="hero-float hero-float--tl">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m13 2-3 7h6l-5 13 2-9H7z"/></svg>
+            <span>Loads in under 2s</span>
+          </div>
+
+          <div class="mock">
+            <div class="mock-bar" aria-hidden="true">
+              <span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span>
+              <span class="mock-url">yourbusiness.co.za</span>
+            </div>
+            <div class="mock-body">
+              <div class="mock-lines" aria-hidden="true">
+                <span class="mock-line mock-line--accent"></span>
+                <span class="mock-line mock-line--80"></span>
+                <span class="mock-line mock-line--60"></span>
+              </div>
+              <div class="mock-stats">
+                <div class="stat">
+                  <div class="stat-value"><span data-count="100" data-suffix="%">100%</span></div>
+                  <div class="stat-label">Mobile-first build</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value"><span data-count="12" data-suffix=" mo">12 mo</span></div>
+                  <div class="stat-label">Hosting included</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value"><span data-count="24" data-suffix="h">24h</span></div>
+                  <div class="stat-label">Reply on WhatsApp</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value">R2,500</div>
+                  <div class="stat-label">Packages start here</div>
+                </div>
+              </div>
+              <div class="mock-lines" aria-hidden="true">
+                <span class="mock-line mock-line--80"></span>
+                <span class="mock-line mock-line--60"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-float hero-float--br">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18M8 4v5"/></svg>
+            <span>Live in 2&ndash;3 weeks</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MARQUEE ================= -->
+    <div class="marquee" aria-label="Industries we build for">
+      <div class="marquee-track">
+        <span class="marquee-item">Salons &amp; barbers</span>
+        <span class="marquee-item">Online stores</span>
+        <span class="marquee-item">Plumbers &amp; electricians</span>
+        <span class="marquee-item">Guest houses</span>
+        <span class="marquee-item">Consultants</span>
+        <span class="marquee-item">Restaurants &amp; caterers</span>
+        <span class="marquee-item">Tutors &amp; academies</span>
+        <span class="marquee-item">NPOs</span>
+        <span class="marquee-item">Photographers</span>
+        <span class="marquee-item">Construction</span>
+        <span class="marquee-item" aria-hidden="true">Salons &amp; barbers</span>
+        <span class="marquee-item" aria-hidden="true">Online stores</span>
+        <span class="marquee-item" aria-hidden="true">Plumbers &amp; electricians</span>
+        <span class="marquee-item" aria-hidden="true">Guest houses</span>
+        <span class="marquee-item" aria-hidden="true">Consultants</span>
+        <span class="marquee-item" aria-hidden="true">Restaurants &amp; caterers</span>
+        <span class="marquee-item" aria-hidden="true">Tutors &amp; academies</span>
+        <span class="marquee-item" aria-hidden="true">NPOs</span>
+        <span class="marquee-item" aria-hidden="true">Photographers</span>
+        <span class="marquee-item" aria-hidden="true">Construction</span>
+      </div>
+    </div>
+
+    <!-- ================= SERVICES ================= -->
+    <section class="container section" id="services">
+      <div class="section-head reveal">
+        <span class="kicker">What we build</span>
+        <h2 class="section-title">Everything your business needs to be found, trusted and chosen online.</h2>
+        <p class="section-sub">
+          One studio for the whole job &mdash; design, build, domain, hosting and the support that keeps it
+          running after launch.
+        </p>
+      </div>
+
+      <div class="grid grid-3">
+        <article class="card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18M16 10a4 4 0 0 1-8 0"/></svg>
+          </div>
+          <h3>E-commerce stores</h3>
+          <p>Sell online with product pages, a cart and a checkout that customers actually complete &mdash; on the phone in their hand.</p>
+          <div class="chip-row">
+            <span class="chip">Product catalogue</span>
+            <span class="chip">Cart &amp; checkout</span>
+            <span class="chip">Payment gateway ready</span>
+          </div>
+          <a class="card-link" href="services.html#ecommerce">Explore e-commerce
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="14" height="14"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="card reveal" data-delay="1">
+          <div class="card-icon card-icon--green" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-5h6v5"/></svg>
+          </div>
+          <h3>Business websites</h3>
+          <p>A professional home for your company that explains what you do, proves you are legitimate and makes contacting you easy.</p>
+          <div class="chip-row">
+            <span class="chip">About &amp; services</span>
+            <span class="chip">Enquiry funnels</span>
+            <span class="chip">Google-ready</span>
+          </div>
+          <a class="card-link" href="services.html#business">Explore business sites
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="14" height="14"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="card reveal" data-delay="2">
+          <div class="card-icon card-icon--sky" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8z"/></svg>
+          </div>
+          <h3>Landing pages</h3>
+          <p>One focused page built around a single action &mdash; perfect for a promotion, a launch or the link in your bio.</p>
+          <div class="chip-row">
+            <span class="chip">Campaign ready</span>
+            <span class="chip">Lead capture</span>
+            <span class="chip">Fast to publish</span>
+          </div>
+          <a class="card-link" href="services.html#landing">Explore landing pages
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="14" height="14"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon card-icon--sky" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>
+          </div>
+          <h3>Website redesigns</h3>
+          <p>Already online but the site looks dated, loads slowly or nobody enquires? We rebuild it around how people actually browse today.</p>
+          <div class="chip-row">
+            <span class="chip">Speed fixes</span>
+            <span class="chip">Modern layout</span>
+            <span class="chip">Content rewrite</span>
+          </div>
+          <a class="card-link" href="services.html#redesign">Explore redesigns
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="14" height="14"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="card reveal" data-delay="1">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          </div>
+          <h3>Local SEO &amp; Google</h3>
+          <p>Show up when someone nearby searches for what you sell, with clean page structure and a properly set-up Google Business Profile.</p>
+          <div class="chip-row">
+            <span class="chip">Keyword basics</span>
+            <span class="chip">Google Business</span>
+            <span class="chip">Search-ready markup</span>
+          </div>
+          <a class="card-link" href="services.html#seo">Explore SEO
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="14" height="14"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="card reveal" data-delay="2">
+          <div class="card-icon card-icon--green" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <h3>Hosting, domains &amp; care</h3>
+          <p>.co.za registration, secure hosting, backups and content updates &mdash; so you never have to wonder who looks after the site.</p>
+          <div class="chip-row">
+            <span class="chip">.co.za domains</span>
+            <span class="chip">SSL &amp; backups</span>
+            <span class="chip">Monthly updates</span>
+          </div>
+          <a class="card-link" href="services.html#care">Explore care plans
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="14" height="14"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= WHY MZANSITECH ================= -->
+    <section class="container section" id="why">
+      <div class="split">
+        <div class="reveal">
+          <span class="kicker">Why the name</span>
+          <h2 class="section-title">Mzansi is home. Tech is the craft.</h2>
+          <p class="section-sub">
+            <strong>Mzansi</strong> is what South Africans call this country &mdash; from the isiXhosa word for
+            &ldquo;south&rdquo;. It is a name people say with pride, and it is the standard we hold ourselves to:
+            websites built here, priced in Rands, and made for the way South Africans really browse.
+          </p>
+          <p class="section-sub" style="margin-top: 1rem;">
+            Every decision in a MzansiTech build &mdash; page weight, payment options, the WhatsApp button in the
+            corner &mdash; comes from that starting point.
+          </p>
+          <div class="chip-row" style="margin-top: 1.5rem;">
+            <span class="chip">Sawubona</span>
+            <span class="chip">Dumela</span>
+            <span class="chip">Molo</span>
+            <span class="chip">Hello</span>
+            <span class="chip">Thobela</span>
+            <span class="chip">Avuxeni</span>
+          </div>
+        </div>
+
+        <div class="value-list reveal" data-delay="1">
+          <div class="value-item">
+            <span class="value-num">01</span>
+            <div>
+              <h3>Built for South African data</h3>
+              <p>Lean pages and compressed images, because your customers pay for every megabyte. A light site is a site people actually finish loading.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <span class="value-num">02</span>
+            <div>
+              <h3>Always reachable</h3>
+              <p>WhatsApp, email or a call &mdash; in SAST, not a timezone eight hours away. You deal with the person building your site.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <span class="value-num">03</span>
+            <div>
+              <h3>Honest Rand pricing</h3>
+              <p>Fixed package prices, no surprise dollar invoices, no hidden &ldquo;setup fees&rdquo;. What we quote is what you pay.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <span class="value-num">04</span>
+            <div>
+              <h3>Ubuntu, applied to service</h3>
+              <p>Your business does better, we do better. We explain choices in plain language and hand over a site you can actually run.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STAT STRIP ================= -->
+    <section class="container section--tight">
+      <div class="stat-strip reveal">
+        <div class="stat-cell">
+          <div class="stat-value"><span data-count="9">9</span></div>
+          <div class="stat-label">Provinces served, remotely</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-value"><span data-count="24" data-suffix="h">24h</span></div>
+          <div class="stat-label">Typical reply time</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-value"><span data-count="3" data-prefix="2–" data-suffix=" wks">2–3 wks</span></div>
+          <div class="stat-label">From brief to launch</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-value"><span data-count="0" data-prefix="R">R0</span></div>
+          <div class="stat-label">Cost of your first quote</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROCESS ================= -->
+    <section class="container section" id="process">
+      <div class="section-head section-head--center reveal">
+        <span class="kicker">How it works</span>
+        <h2 class="section-title">Four steps, no jargon, no surprises.</h2>
+        <p class="section-sub">You always know what is happening, what we need from you, and what comes next.</p>
+      </div>
+
+      <div class="steps">
+        <article class="step reveal">
+          <span class="step-num">1</span>
+          <h3>Chat</h3>
+          <p>A free WhatsApp or phone conversation about your business, your customers and what the site must achieve.</p>
+          <span class="step-time">Day 1 &middot; Free</span>
+        </article>
+        <article class="step reveal" data-delay="1">
+          <span class="step-num">2</span>
+          <h3>Plan &amp; quote</h3>
+          <p>You get a written quote, a page plan and a timeline. A 50% deposit reserves your build slot.</p>
+          <span class="step-time">Within 24 hours</span>
+        </article>
+        <article class="step reveal" data-delay="2">
+          <span class="step-num">3</span>
+          <h3>Design &amp; build</h3>
+          <p>We design, write and build the site, then send you a live preview link to review on your own phone.</p>
+          <span class="step-time">1&ndash;3 weeks</span>
+        </article>
+        <article class="step reveal" data-delay="3">
+          <span class="step-num">4</span>
+          <h3>Launch &amp; look after</h3>
+          <p>Final payment, domain connected, site live. Then we stay on for updates, backups and changes.</p>
+          <span class="step-time">Launch day &amp; beyond</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= WORK PREVIEW ================= -->
+    <section class="container section" id="work">
+      <div class="section-head reveal">
+        <span class="kicker">Recent work</span>
+        <h2 class="section-title">Live builds you can open right now.</h2>
+        <p class="section-sub">Every project below is a real, working site &mdash; click through and test it on your phone.</p>
+      </div>
+
+      <div class="work-grid">
+        <article class="work-card reveal">
+          <div class="work-thumb work-thumb--store" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18M16 10a4 4 0 0 1-8 0"/></svg>
+          </div>
+          <div class="work-body">
+            <span class="work-tag">E-commerce</span>
+            <h3>Digital download store</h3>
+            <p>Full catalogue, cart, checkout flow and instant downloads &mdash; a complete online store experience.</p>
+            <a class="card-link" href="https://bucolic-dusk-3e447d-e-commerce-demo.netlify.app/" target="_blank" rel="noopener">
+              Open live demo
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="14" height="14"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-delay="1">
+          <div class="work-thumb work-thumb--biz" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-5h6v5"/></svg>
+          </div>
+          <div class="work-body">
+            <span class="work-tag">Business site</span>
+            <h3>Service company website</h3>
+            <p>A trust-building homepage with clear service pages and contact funnels that turn visitors into enquiries.</p>
+            <a class="card-link" href="https://aquamarine-lokum-5b7afe.netlify.app/" target="_blank" rel="noopener">
+              Open live demo
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="14" height="14"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-delay="2">
+          <div class="work-thumb work-thumb--landing" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8z"/></svg>
+          </div>
+          <div class="work-body">
+            <span class="work-tag">Landing page</span>
+            <h3>Campaign storytelling page</h3>
+            <p>A single-page, scroll-driven story built to hold attention and drive one clear action at the end.</p>
+            <a class="card-link" href="https://volkswagen-history.netlify.app/" target="_blank" rel="noopener">
+              Open live demo
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="14" height="14"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <div style="margin-top: 2rem;" class="reveal">
+        <a class="btn btn-secondary" href="portfolio.html">
+          View the full portfolio
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ================= PRICING ================= -->
+    <section class="container section" id="pricing">
+      <div class="section-head section-head--center reveal">
+        <span class="kicker">Pricing in Rands</span>
+        <h2 class="section-title">Clear packages. No hidden costs.</h2>
+        <p class="section-sub">
+          Every package includes <strong>one year of domain registration and hosting</strong>. After the first
+          year it is R650/year, or R250/month if you want us maintaining the site too.
+        </p>
+      </div>
+
+      <div class="pricing-grid pricing-grid--4">
+        <article class="price-card reveal">
+          <div class="price-name">Mzansi Basic</div>
+          <div class="price-for">For a first professional presence</div>
+          <div class="price-amount"><span class="cur">R</span><span class="amount">2,500</span></div>
+          <div class="price-terms">once-off &middot; 50% deposit to start</div>
+          <ul class="price-features">
+            <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><strong>1-page</strong> website</span></li>
+            <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span>Mobile-friendly design</span></li>
+            <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span>Contact form &amp; WhatsApp button</span></li>
+            <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span>Domain + hosting, 1 year</span></li>
+            <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span>1 round of revisions</span></li>
+          </ul>
+          <a class="btn btn-secondary btn-block" href="contact.html?package=basic">Choose Basic</a>
+        </article>
+
+        <article class="price-card price-card--featured reveal" data-delay="1">
+          <span class="price-flag">Most popular</span>
+          <div class="price-name">Mzansi Pro</div>
+          <div class="price-for">For established small businesses</div>
+          <div class="price-amount"><span class="cur">R</span><span class="amount">5,500</span></div>
+          <div class="price-terms">once-off &middot; 50% deposit to start</div>
+          <ul class="price-features">
+            <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><strong>3&ndash;5 pages</strong></span></li>
+            <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span>Mobile-friendly design</span></li>
+            <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span>Contact form &amp; social links</span></li>
+            <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><strong>Basic SEO</strong> setup</span></li>
+            <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span>Domain + hosting, 1 year</span></li>
+            <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span>2 rounds of revisions</span></li>
+          </ul>
+          <a class="btn btn-primary btn-block" href="contact.html?package=pro">Choose Pro</a>
+        </article>
+
+        <article class="price-card reveal" data-delay="2">
+          <div class="price-name">Mzansi Biz</div>
+          <div class="price-for">For growing teams and content</div>
+          <div class="price-amount"><span class="cur">R</span><span class="amount">9,500</span></div>
+          <div class="price-terms">once-off &middot; 50% deposit to start</div>
+          <ul class="price-features">
+            <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><strong>5&ndash;10 pages</strong></span></li>
+            <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span>Blog setup</span></li>
+            <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span>Full SEO groundwork</span></li>
+            <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span>Contact forms &amp; social links</span></li>
+            <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span>Domain + hosting, 1 year</span></li>
+            <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span>3 rounds of revisions</span></li>
+          </ul>
+          <a class="btn btn-secondary btn-block" href="contact.html?package=biz">Choose Biz</a>
+        </article>
+
+        <article class="price-card reveal" data-delay="3">
+          <div class="price-name">Mzansi Store</div>
+          <div class="price-for">Selling online, properly</div>
+          <div class="price-amount"><span class="price-from">from</span><span class="cur">R</span><span class="amount">14,500</span></div>
+          <div class="price-terms">quoted on catalogue size &middot; 50% deposit</div>
+          <ul class="price-features">
+            <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><strong>Everything in Biz</strong></span></li>
+            <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span>Product catalogue, cart &amp; checkout</span></li>
+            <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span>SA payment gateway &mdash; PayFast, Yoco or Ozow</span></li>
+            <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span>Delivery &amp; collection options</span></li>
+            <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span>Domain + hosting, 1 year</span></li>
+            <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span>Walkthrough on loading your own products</span></li>
+          </ul>
+          <a class="btn btn-secondary btn-block" href="contact.html?package=store">Choose Store</a>
+        </article>
+      </div>
+
+      <div class="price-note reveal">
+        <strong>Need something else?</strong> Booking systems, member areas, logo design and custom features are
+        quoted per project &mdash; tell us what you have in mind and you will get a written quote within 24 hours.
+        Store pricing depends on how many products you carry, which is why it is quoted from a starting figure.
+        Payment is 50% deposit to start, balance before the site goes live. We accept EFT and bank deposit.
+      </div>
+    </section>
+
+    <!-- ================= PROMISE ================= -->
+    <section class="container section" id="promise">
+      <div class="section-head section-head--center reveal">
+        <span class="kicker">Our promise</span>
+        <h2 class="section-title">What you can hold us to.</h2>
+        <p class="section-sub">No agency runaround. These are the commitments behind every MzansiTech project.</p>
+      </div>
+
+      <div class="grid grid-3">
+        <article class="card reveal">
+          <div class="card-icon card-icon--green" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          </div>
+          <h3>We reply within 24 hours</h3>
+          <p>Enquiries, questions during the build, or a problem after launch &mdash; you get a human answer on a working day.</p>
+        </article>
+        <article class="card reveal" data-delay="1">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3>The quote is the price</h3>
+          <p>Scope, revisions and what happens after year one are written down before you pay a cent.</p>
+        </article>
+        <article class="card reveal" data-delay="2">
+          <div class="card-icon card-icon--sky" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h3>The site belongs to you</h3>
+          <p>Your domain is registered in your name and you get the files and logins. No lock-in, ever.</p>
+        </article>
+      </div>
+
+      <!--
+        TESTIMONIALS — ready to switch on.
+        When a client gives you a review, delete this comment wrapper and fill in the details.
+        Copy the block for each extra review.
+
+      <div class="grid grid-3" style="margin-top: 1.25rem;">
+        <article class="quote-card reveal">
+          <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+          <blockquote>Paste the client's own words here.</blockquote>
+          <div class="quote-author">
+            <span class="quote-avatar" aria-hidden="true">TM</span>
+            <span>
+              <span class="quote-name">Client name</span><br />
+              <span class="quote-role">Business name, City</span>
+            </span>
+          </div>
+        </article>
+      </div>
+      -->
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="container section" id="faq">
+      <div class="section-head section-head--center reveal">
+        <span class="kicker">Questions</span>
+        <h2 class="section-title">The things people ask before they commit.</h2>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item reveal">
+          <summary>How much does a website cost in South Africa?</summary>
+          <div class="faq-answer">
+            <p>Our packages start at <strong>R2,500</strong> for a single-page site, <strong>R5,500</strong> for a 3&ndash;5 page business website and <strong>R9,500</strong> for a 5&ndash;10 page site with a blog and SEO. Each one includes a year of domain registration and hosting, so there is nothing extra to buy in month one.</p>
+            <p>Online stores start <strong>from R14,500</strong>, priced on the size of your catalogue. Booking systems and custom features are quoted per project.</p>
+          </div>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>How long does it take to build?</summary>
+          <div class="faq-answer">
+            <p>A single-page site is usually live within a week. Most business websites launch in two to three weeks. The clock really starts once you have sent your content, logo and photos &mdash; that is the step that decides the pace.</p>
+          </div>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>Do I need to buy a domain and hosting myself?</summary>
+          <div class="faq-answer">
+            <p>No. We register your <strong>.co.za</strong> (or .com) domain and set up hosting as part of the package, for the first 12 months. After that it is R650/year, or R250/month if you want maintenance included. The domain is registered in your name &mdash; it is yours.</p>
+          </div>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>Can I update the website myself afterwards?</summary>
+          <div class="faq-answer">
+            <p>Yes. We walk you through the parts you are likely to change, like prices, photos and opening hours. If you would rather not touch it, our maintenance plan covers content updates for you.</p>
+          </div>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>Do you work with businesses outside my province?</summary>
+          <div class="faq-answer">
+            <p>We work with businesses across all nine provinces &mdash; Gauteng, Limpopo, Mpumalanga, North West, Free State, KwaZulu-Natal, Eastern Cape, Northern Cape and the Western Cape. Everything runs over WhatsApp, email and video calls, so where you are makes no difference to the result.</p>
+          </div>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>How do I pay, and when?</summary>
+          <div class="faq-answer">
+            <p>A <strong>50% deposit</strong> confirms your slot and starts the work. The balance is due before the site goes live. We accept EFT and bank deposit, and you get an invoice for your records.</p>
+          </div>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>Will the site load properly on mobile data?</summary>
+          <div class="faq-answer">
+            <p>That is a design requirement here, not an afterthought. We build mobile-first, compress every image and keep pages light so they open quickly on 3G and LTE &mdash; because that is how most of your customers will arrive.</p>
+          </div>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>What about POPIA and my customers' information?</summary>
+          <div class="faq-answer">
+            <p>Forms collect only what you actually need, everything is served over HTTPS, and your site ships with a privacy notice explaining what is collected and why &mdash; the groundwork the Protection of Personal Information Act expects. See our <a href="privacy.html">privacy policy</a> for how MzansiTech itself handles data.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- ================= FINAL CTA ================= -->
+    <section class="container section">
+      <div class="cta-band reveal">
+        <h2>Let&rsquo;s get your business online properly.</h2>
+        <p>
+          Tell us what you do and who you want to reach. You will get a straight answer, a written quote and a
+          timeline &mdash; usually within 24 hours, always free.
+        </p>
+        <div class="cta-actions">
+          <a class="btn btn-primary btn-lg" href="contact.html">Get a free quote</a>
+          <a class="btn btn-whatsapp btn-lg" href="https://wa.me/27740415849?text=Hi%20MzansiTech%2C%20I%27d%20like%20a%20quote%20for%20a%20website." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.67c2.2 0 4.27.86 5.82 2.42a8.19 8.19 0 0 1 2.42 5.82c0 4.54-3.7 8.24-8.25 8.24a8.23 8.23 0 0 1-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.26-8.24m-4.53 4.4c-.21 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.62s1.13 3.04 1.29 3.25c.16.21 2.22 3.39 5.38 4.62 2.63 1.04 3.16.83 3.73.78.57-.05 1.85-.76 2.11-1.49.26-.73.26-1.36.18-1.49-.08-.13-.29-.21-.6-.36-.31-.16-1.85-.91-2.14-1.02-.29-.1-.5-.16-.71.16-.21.31-.81 1.02-1 1.23-.18.21-.37.24-.68.08-.31-.16-1.32-.49-2.51-1.55-.93-.83-1.55-1.85-1.74-2.16-.18-.31-.02-.48.14-.63.14-.14.31-.37.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.7-1.71-.96-2.34-.25-.61-.5-.53-.7-.54z"/></svg>
+            WhatsApp us
+          </a>
+        </div>
+        <p class="cta-note">Free consultation &middot; Written quote &middot; No obligation</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <img class="brand-mark" src="assets/logo-mark.svg" alt="" width="42" height="42" />
+            <span class="brand-text">
+              <span class="brand-name">Mzansi<span>Tech</span></span>
+              <span class="brand-tag">Web Studio &middot; South Africa</span>
+            </span>
+          </a>
+          <p>
+            A South African web studio building fast, honest, mobile-first websites for businesses that are
+            ready to be found online.
+          </p>
+          <div class="social-row">
+            <a class="social-btn" href="https://www.linkedin.com/in/omphile-malepe-0b220729a/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5M3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.82-2.05 3.75-2.05C20.4 8.65 21 11 21 14.1V21h-4v-6.1c0-1.45-.03-3.3-2-3.3-2 0-2.3 1.57-2.3 3.2V21H9z"/></svg>
+            </a>
+            <a class="social-btn" href="https://wa.me/27740415849" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.67c2.2 0 4.27.86 5.82 2.42a8.19 8.19 0 0 1 2.42 5.82c0 4.54-3.7 8.24-8.25 8.24a8.23 8.23 0 0 1-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.26-8.24m-4.53 4.4c-.21 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.62s1.13 3.04 1.29 3.25c.16.21 2.22 3.39 5.38 4.62 2.63 1.04 3.16.83 3.73.78.57-.05 1.85-.76 2.11-1.49.26-.73.26-1.36.18-1.49-.08-.13-.29-.21-.6-.36-.31-.16-1.85-.91-2.14-1.02-.29-.1-.5-.16-.71.16-.21.31-.81 1.02-1 1.23-.18.21-.37.24-.68.08-.31-.16-1.32-.49-2.51-1.55-.93-.83-1.55-1.85-1.74-2.16-.18-.31-.02-.48.14-.63.14-.14.31-.37.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.7-1.71-.96-2.34-.25-.61-.5-.53-.7-.54z"/></svg>
+            </a>
+            <a class="social-btn" href="mailto:solomonmalepe8@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4-8 5-8-5V6l8 5 8-5z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#ecommerce">E-commerce stores</a></li>
+            <li><a href="services.html#business">Business websites</a></li>
+            <li><a href="services.html#landing">Landing pages</a></li>
+            <li><a href="services.html#redesign">Website redesigns</a></li>
+            <li><a href="services.html#seo">Local SEO</a></li>
+            <li><a href="services.html#care">Hosting &amp; care</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About MzansiTech</a></li>
+            <li><a href="portfolio.html">Our work</a></li>
+            <li><a href="index.html#pricing">Pricing</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="https://omphile-malepe-portfolio.netlify.app/" target="_blank" rel="noopener">Founder portfolio</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Get in touch</h4>
+          <ul>
+            <li><a href="https://wa.me/27740415849" target="_blank" rel="noopener">WhatsApp: 074 041 5849</a></li>
+            <li><a href="mailto:solomonmalepe8@gmail.com">solomonmalepe8@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/omphile-malepe-0b220729a/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><span style="font-size:0.9rem;color:var(--text-muted)">Mon&ndash;Fri, 08:00&ndash;17:00 SAST</span></li>
+            <li><span style="font-size:0.9rem;color:var(--text-muted)">Serving all 9 provinces</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span data-year>2026</span> MzansiTech. All rights reserved.<br />
+          <span class="founder-line">Founded by
+            <a href="https://www.linkedin.com/in/omphile-malepe-0b220729a/" target="_blank" rel="noopener">Omphile Malepe</a>
+          </span>
+        </div>
+        <nav aria-label="Legal">
+          <a href="privacy.html">Privacy &amp; POPIA</a>
+          <a href="terms.html">Terms</a>
+          <a href="sitemap.xml">Sitemap</a>
+        </nav>
+        <span class="made-in"><span class="flag-chip" aria-hidden="true"></span> Designed &amp; built in Mzansi</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="fab-wa" href="https://wa.me/27740415849?text=Hi%20MzansiTech%2C%20I%27d%20like%20a%20quote%20for%20a%20website." target="_blank" rel="noopener" aria-label="Chat to MzansiTech on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.67c2.2 0 4.27.86 5.82 2.42a8.19 8.19 0 0 1 2.42 5.82c0 4.54-3.7 8.24-8.25 8.24a8.23 8.23 0 0 1-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.26-8.24m-4.53 4.4c-.21 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.62s1.13 3.04 1.29 3.25c.16.21 2.22 3.39 5.38 4.62 2.63 1.04 3.16.83 3.73.78.57-.05 1.85-.76 2.11-1.49.26-.73.26-1.36.18-1.49-.08-.13-.29-.21-.6-.36-.31-.16-1.85-.91-2.14-1.02-.29-.1-.5-.16-.71.16-.21.31-.81 1.02-1 1.23-.18.21-.37.24-.68.08-.31-.16-1.32-.49-2.51-1.55-.93-.83-1.55-1.85-1.74-2.16-.18-.31-.02-.48.14-.63.14-.14.31-.37.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.7-1.71-.96-2.34-.25-.61-.5-.53-.7-.54z"/></svg>
+    <span>WhatsApp us</span>
+  </a>
+
+  <button class="to-top" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+  <!-- ANALYTICS (inactive until you add a token).
+       Cloudflare Web Analytics is free, cookieless and needs no consent banner.
+       1. Sign up at https://dash.cloudflare.com and open Web Analytics
+       2. Add your domain, copy the site token it gives you
+       3. Replace YOUR_TOKEN_HERE below, then delete this comment wrapper
+          (the two lines starting with "<!" and ending with ">") on every page.
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "YOUR_TOKEN_HERE"}'></script>
+  -->
+</body>
+</html>

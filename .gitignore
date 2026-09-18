@@ -1,0 +1,15 @@
+# Stray nested clones of this same repo (empty — safe to delete from disk)
+ZESTY-WEB/
+Mzansi_Tech/
+
+# Old logo, no longer referenced by any page. Kept locally, not deployed.
+ZESTYWEB-LOGO.png
+
+# Editor / OS cruft
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Netlify CLI
+.netlify/
