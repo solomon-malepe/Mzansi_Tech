@@ -8,5 +8,5 @@
   </defs>
   <rect width="64" height="64" rx="18" fill="url(#mzMark)" />
   <path d="M14 47V21.5a1.6 1.6 0 0 1 2.9-1L32 39.5l15.1-19a1.6 1.6 0 0 1 2.9 1V47"
-        fill="none" stroke="#07101F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        fill="none" stroke="#0A120F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
 </svg>

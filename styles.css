@@ -53,7 +53,7 @@
 
 /* ---------- 1. Tokens ---------------------------------------------------- */
 :root {
-  /* Brand — drawn from the South African flag: gold, green, sky */
+  /* Brand — Springbok green & gold, with a warm clay accent */
   --gold-300: #ffd166;
   --gold-400: #f7b733;
   --gold-500: #f5a524;
@@ -61,34 +61,34 @@
   --green-400: #2fcf8d;
   --green-500: #0fa968;
   --green-600: #047857;
-  --sky-400: #38bdf8;
+  --clay-400: #e8795a;
 
-  /* Dark surface scale */
-  --bg: #070b14;
-  --bg-soft: #0a1020;
-  --surface: #0e1524;
-  --surface-2: #131c2e;
-  --surface-3: #18233a;
-  --line: rgba(148, 163, 184, 0.16);
-  --line-strong: rgba(148, 163, 184, 0.3);
+  /* Dark surface scale — deep forest ink */
+  --bg: #070d0b;
+  --bg-soft: #0a120f;
+  --surface: #0c1512;
+  --surface-2: #111d19;
+  --surface-3: #16261f;
+  --line: rgba(162, 184, 170, 0.15);
+  --line-strong: rgba(162, 184, 170, 0.28);
 
   /* Text */
-  --text: #f8fafc;
-  --text-muted: #9aa8bf;
-  --text-dim: #6b7a92;
-  --on-brand: #07101f;
+  --text: #f6f4ee;
+  --text-muted: #a2b0a7;
+  --text-dim: #76867c;
+  --on-brand: #0a120f;
 
   /* Effects */
   --glass: rgba(255, 255, 255, 0.04);
   --glass-hover: rgba(255, 255, 255, 0.07);
-  --shadow-sm: 0 2px 8px rgba(2, 6, 16, 0.4);
-  --shadow-md: 0 14px 34px rgba(2, 6, 16, 0.5);
-  --shadow-lg: 0 28px 64px rgba(2, 6, 16, 0.6);
+  --shadow-sm: 0 2px 8px rgba(2, 8, 5, 0.4);
+  --shadow-md: 0 14px 34px rgba(2, 8, 5, 0.5);
+  --shadow-lg: 0 28px 64px rgba(2, 8, 5, 0.6);
   --glow-gold: 0 16px 40px rgba(245, 165, 36, 0.28);
 
   --grad-brand: linear-gradient(115deg, var(--gold-300), var(--gold-500) 45%, var(--green-500));
   --grad-text: linear-gradient(100deg, var(--gold-300), var(--gold-500) 40%, var(--green-400));
-  --grad-line: linear-gradient(90deg, var(--gold-500), var(--green-500), var(--sky-400));
+  --grad-line: linear-gradient(90deg, var(--gold-500), var(--green-500), var(--clay-400));
 
   /* Type */
   --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -109,23 +109,24 @@
 }
 
 :root[data-theme="light"] {
-  --bg: #f7f8fb;
+  --bg: #f8f6f0;
   --bg-soft: #ffffff;
   --surface: #ffffff;
-  --surface-2: #f2f4f9;
-  --surface-3: #e8ecf5;
-  --line: rgba(11, 18, 32, 0.1);
-  --line-strong: rgba(11, 18, 32, 0.18);
-  --text: #0b1220;
-  --text-muted: #4d5b72;
-  --text-dim: #64748b;
-  --glass: rgba(11, 18, 32, 0.025);
-  --glass-hover: rgba(11, 18, 32, 0.05);
-  --shadow-sm: 0 2px 8px rgba(11, 18, 32, 0.06);
-  --shadow-md: 0 14px 34px rgba(11, 18, 32, 0.09);
-  --shadow-lg: 0 28px 64px rgba(11, 18, 32, 0.12);
+  --surface-2: #f2efe6;
+  --surface-3: #e8e3d7;
+  --line: rgba(18, 26, 22, 0.1);
+  --line-strong: rgba(18, 26, 22, 0.18);
+  --text: #121a16;
+  --text-muted: #4b5750;
+  --text-dim: #5f6b64;
+  --glass: rgba(18, 26, 22, 0.025);
+  --glass-hover: rgba(18, 26, 22, 0.05);
+  --shadow-sm: 0 2px 8px rgba(18, 26, 22, 0.06);
+  --shadow-md: 0 14px 34px rgba(18, 26, 22, 0.09);
+  --shadow-lg: 0 28px 64px rgba(18, 26, 22, 0.12);
   --glow-gold: 0 16px 34px rgba(245, 165, 36, 0.3);
   --green-500: #047857;
+  --clay-400: #c8562f;
   color-scheme: light;
 }
 
@@ -162,7 +163,7 @@ body::before {
   background:
     radial-gradient(60rem 40rem at 12% -10%, rgba(245, 165, 36, 0.12), transparent 60%),
     radial-gradient(50rem 36rem at 92% 8%, rgba(15, 169, 104, 0.11), transparent 62%),
-    radial-gradient(44rem 34rem at 50% 108%, rgba(56, 189, 248, 0.07), transparent 60%);
+    radial-gradient(44rem 34rem at 50% 108%, rgba(232, 121, 90, 0.07), transparent 60%);
 }
 
 :root[data-theme="light"] body::before { opacity: 0.6; }
@@ -181,7 +182,7 @@ a:not([class]) {
   transition: color var(--t-fast);
 }
 a:not([class]):hover { color: var(--gold-300); }
-:root[data-theme="light"] a:not([class]) { color: var(--gold-600); }
+:where(:root[data-theme="light"]) a:not([class]) { color: var(--gold-600); }
 
 h1, h2, h3, h4 {
   font-family: var(--font-display);
@@ -426,6 +427,7 @@ button { font: inherit; color: inherit; cursor: pointer; border: 0; background: 
   font-size: 0.93rem;
   font-weight: 500;
   color: var(--text-muted);
+  text-decoration: none;
   transition: color var(--t-fast), background-color var(--t-fast);
 }
 .nav-links a:hover { color: var(--text); background: var(--glass); text-decoration: none; }
@@ -444,8 +446,11 @@ button { font: inherit; color: inherit; cursor: pointer; border: 0; background: 
 
 .nav-actions { display: flex; align-items: center; gap: 0.6rem; flex: none; }
 
-/* The drawer keeps its own CTA; on desktop the header action bar carries it. */
-.nav-cta { display: none; }
+/* The drawer keeps its own CTA; on desktop the header action bar carries it.
+   Scoped under .nav-links so it outranks the plain nav-link rules above. */
+.nav-links .nav-cta { display: none; }
+.nav-links .nav-cta,
+.nav-links .nav-cta:hover { color: var(--on-brand); background: var(--grad-brand); }
 
 .theme-toggle {
   display: inline-grid;
@@ -611,6 +616,7 @@ button { font: inherit; color: inherit; cursor: pointer; border: 0; background: 
 
 .hero-float {
   position: absolute;
+  z-index: 2; /* the animated .mock paints over earlier siblings without this */
   display: flex;
   align-items: center;
   gap: 0.55rem;
@@ -708,7 +714,7 @@ button { font: inherit; color: inherit; cursor: pointer; border: 0; background: 
 }
 .card-icon svg { width: 1.4rem; height: 1.4rem; }
 .card-icon--green { background: rgba(15, 169, 104, 0.12); border-color: rgba(15, 169, 104, 0.26); color: var(--green-400); }
-.card-icon--sky { background: rgba(56, 189, 248, 0.12); border-color: rgba(56, 189, 248, 0.26); color: var(--sky-400); }
+.card-icon--clay { background: rgba(232, 121, 90, 0.12); border-color: rgba(232, 121, 90, 0.26); color: var(--clay-400); }
 
 a.card { display: block; color: inherit; }
 a.card:hover { text-decoration: none; }
@@ -1028,7 +1034,7 @@ a.card:hover { text-decoration: none; }
 }
 .work-thumb--store { background: radial-gradient(circle at 30% 20%, rgba(245, 165, 36, 0.3), transparent 60%), var(--surface-3); }
 .work-thumb--biz { background: radial-gradient(circle at 70% 25%, rgba(15, 169, 104, 0.3), transparent 60%), var(--surface-3); }
-.work-thumb--landing { background: radial-gradient(circle at 50% 20%, rgba(56, 189, 248, 0.28), transparent 60%), var(--surface-3); }
+.work-thumb--landing { background: radial-gradient(circle at 50% 20%, rgba(232, 121, 90, 0.28), transparent 60%), var(--surface-3); }
 .work-thumb--profile { background: radial-gradient(circle at 40% 25%, rgba(168, 85, 247, 0.26), transparent 60%), var(--surface-3); }
 
 .work-thumb svg { width: 3.2rem; height: 3.2rem; color: var(--text); opacity: 0.85; transition: transform var(--t); }
@@ -1284,6 +1290,7 @@ a.card:hover { text-decoration: none; }
 .contact-icon--in { background: rgba(10, 102, 194, 0.16); color: #4aa3f0; }
 .contact-icon--folio { background: rgba(168, 85, 247, 0.14); color: #c084fc; }
 
+.contact-label, .contact-value, .contact-meta { display: block; }
 .contact-label { font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-dim); }
 .contact-value { font-size: 0.95rem; font-weight: 600; word-break: break-word; }
 .contact-meta { font-size: 0.8rem; color: var(--text-muted); }
@@ -1324,7 +1331,7 @@ a.card:hover { text-decoration: none; }
   margin-bottom: 1rem;
 }
 .footer-col ul { display: grid; gap: 0.6rem; }
-.footer-col a { font-size: 0.9rem; color: var(--text-muted); transition: color var(--t-fast), padding-left var(--t-fast); }
+.footer-col a { font-size: 0.9rem; color: var(--text-muted); text-decoration: none; transition: color var(--t-fast), padding-left var(--t-fast); }
 .footer-col a:hover { color: var(--gold-400); padding-left: 0.2rem; text-decoration: none; }
 
 .social-row { display: flex; gap: 0.55rem; }
@@ -1375,7 +1382,7 @@ a.card:hover { text-decoration: none; }
   width: 1.1rem;
   height: 0.75rem;
   border-radius: 2px;
-  background: linear-gradient(180deg, var(--gold-500) 0 33%, var(--green-500) 33% 66%, var(--sky-400) 66% 100%);
+  background: linear-gradient(180deg, var(--gold-500) 0 33%, var(--green-500) 33% 66%, var(--clay-400) 66% 100%);
 }
 
 /* ---------- 13. Floating UI ---------------------------------------------- */

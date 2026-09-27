@@ -11,7 +11,7 @@ No build step, no frameworks: open `index.html` and it runs.
 |---|---|
 | `index.html` | Homepage — hero, services, the story behind the name, process, work, pricing, FAQ |
 | `services.html` | Detailed services, what's included, package comparison table, add-ons |
-| `portfolio.html` | Filterable project grid + embedded live store demo |
+| `portfolio.html` | **Hidden for now** — unlinked from every page, removed from `sitemap.xml` and set to `noindex`. To bring it back: restore the "Work" nav link, footer link, homepage work preview and sitemap entry from git history, and set robots back to `index, follow` |
 | `about.html` | The name, the founder, values, coverage across the 9 provinces |
 | `contact.html` | Quote request form, contact channels, office hours, FAQ |
 | `privacy.html` | Privacy policy / POPIA notice |
@@ -85,9 +85,11 @@ Form inputs are 16px (anything smaller makes iOS zoom on focus), tap targets are
 touch, fixed buttons clear the notch and home indicator via `env(safe-area-inset-*)`, and
 `@media (hover: none)` stops hover states sticking after a tap.
 
-**Portfolio filters.** Each card carries `data-category="ecommerce|business|landing|profile"`.
-To add a project, copy a `.work-card` block and give it a category — the filter buttons pick it
-up automatically.
+**Portfolio filters.** Each card carries `data-category="ecommerce|business|landing"`.
+To add a project, copy a `.work-card` block and give it one of those categories — the filter
+buttons pick it up automatically. (The founder's personal portfolio card and its "Portfolios"
+filter were removed until that site is rebranded; the `profile` category and its
+`.work-thumb--profile` style are still in `styles.css` if you bring it back.)
 
 **Claims kept honest.** Everything stated on the site is either verifiable from your own package
 terms (R2,500 / R5,500 / R9,500, stores from R14,500, 12 months hosting, R650/year
