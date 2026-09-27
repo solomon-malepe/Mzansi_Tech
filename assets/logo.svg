@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 64" width="300" height="64" role="img" aria-label="MzansiTech">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 64" width="300" height="64" role="img" aria-label="MzansiCraft">
   <defs>
     <linearGradient id="mzLock" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#FFD166" />
@@ -9,6 +9,6 @@
   <rect width="64" height="64" rx="18" fill="url(#mzLock)" />
   <path d="M14 47V21.5a1.6 1.6 0 0 1 2.9-1L32 39.5l15.1-19a1.6 1.6 0 0 1 2.9 1V47"
         fill="none" stroke="#07101F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
-  <text x="80" y="41" font-family="Segoe UI, Inter, system-ui, sans-serif" font-size="27" font-weight="700" fill="#F8FAFC">Mzansi<tspan fill="#F5A524">Tech</tspan></text>
+  <text x="80" y="41" font-family="Segoe UI, Inter, system-ui, sans-serif" font-size="27" font-weight="700" fill="#F8FAFC">Mzansi<tspan fill="#F5A524">Craft</tspan></text>
   <text x="81" y="55" font-family="Segoe UI, Inter, system-ui, sans-serif" font-size="9.5" letter-spacing="3.1" fill="#94A3B8">WEB STUDIO &#183; SOUTH AFRICA</text>
 </svg>

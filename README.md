@@ -1,6 +1,6 @@
-# MzansiTech — website
+# MzansiCraft — website
 
-A static, dependency-free business website for **MzansiTech**, a South African web studio.
+A static, dependency-free business website for **MzansiCraft**, a South African web studio.
 No build step, no frameworks: open `index.html` and it runs.
 
 ---
@@ -26,16 +26,16 @@ Supporting files: `styles.css`, `main.js`, `sitemap.xml`, `robots.txt`, `site.we
 
 ## Before you go live — the short list
 
-1. **Buy the domain.** Every page currently says `https://www.mzansitech.co.za` in its
+1. **Buy the domain.** Every page currently says `https://www.mzansicraftstudio.co.za` in its
    `<link rel="canonical">`, Open Graph tags and `sitemap.xml`. If your real domain differs,
-   find-and-replace `www.mzansitech.co.za` across all `.html` files and `sitemap.xml`.
+   find-and-replace `www.mzansicraftstudio.co.za` across all `.html` files and `sitemap.xml`.
 2. **Email is published as `solomonmalepe8@gmail.com`.** It appears in every page footer (a
    `.social-btn` and a "Get in touch" link), as a `.contact-item` card on `contact.html`, in the
    `"email"` field of the structured data on `index.html` and `contact.html`, and in the contact
    sections of `privacy.html` and `terms.html`. To change it, find-and-replace that address
    across all `.html` files.
 
-   Consider moving to a branded address (e.g. `hello@mzansitech.co.za`) once the domain is
+   Consider moving to a branded address (e.g. `hello@mzansicraftstudio.co.za`) once the domain is
    registered — most `.co.za` registrars include mail forwarding, so it can just forward to the
    Gmail inbox. A business address on the business domain reads better on a quote page.
 
@@ -55,7 +55,7 @@ Supporting files: `styles.css`, `main.js`, `sitemap.xml`, `robots.txt`, `site.we
 ## Things worth knowing
 
 **Theme.** Dark by default. The toggle in the header stores the choice under the
-`mzansitech-theme` key in `localStorage`. All colours come from CSS custom properties at the
+`mzansicraft-theme` key in `localStorage`. All colours come from CSS custom properties at the
 top of `styles.css` — change `--gold-500`, `--green-500` and the `--bg`/`--surface` scale and
 the whole site follows.
 

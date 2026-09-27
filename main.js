@@ -1,5 +1,5 @@
 /* ==========================================================================
-   MzansiTech — site behaviour
+   MzansiCraft — site behaviour
    Vanilla JS, no dependencies. Every block is defensive: if an element is
    missing on a page, that feature quietly does nothing.
    ========================================================================== */
@@ -18,7 +18,7 @@
       document.documentElement.setAttribute("data-theme", next);
       toggle.setAttribute("aria-label", next === "light" ? "Switch to dark theme" : "Switch to light theme");
       try {
-        localStorage.setItem("mzansitech-theme", next);
+        localStorage.setItem("mzansicraft-theme", next);
       } catch (e) {
         /* private browsing — theme just won't persist */
       }
