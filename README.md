@@ -26,18 +26,29 @@ Supporting files: `styles.css`, `main.js`, `sitemap.xml`, `robots.txt`, `site.we
 
 ## Before you go live — the short list
 
-1. **Buy the domain.** Every page currently says `https://www.mzansicraftstudio.co.za` in its
-   `<link rel="canonical">`, Open Graph tags and `sitemap.xml`. If your real domain differs,
-   find-and-replace `www.mzansicraftstudio.co.za` across all `.html` files and `sitemap.xml`.
-2. **Email is published as `solomonmalepe8@gmail.com`.** It appears in every page footer (a
+1. **The domain is `mzansicraftstudio.co.za`**, registered at domains.co.za, with DNS on their
+   nameservers (`ns1`–`ns4.tld-ns.net/.com`). Every page uses `https://www.mzansicraftstudio.co.za`
+   in its `<link rel="canonical">`, Open Graph tags and `sitemap.xml`. The site needs an A record
+   for `@` and a CNAME for `www` pointing at Netlify (Netlify's domain settings show the values).
+2. **Email is published as `hello@mzansicraftstudio.co.za`.** It appears in every page footer (a
    `.social-btn` and a "Get in touch" link), as a `.contact-item` card on `contact.html`, in the
    `"email"` field of the structured data on `index.html` and `contact.html`, and in the contact
    sections of `privacy.html` and `terms.html`. To change it, find-and-replace that address
    across all `.html` files.
 
-   Consider moving to a branded address (e.g. `hello@mzansicraftstudio.co.za`) once the domain is
-   registered — most `.co.za` registrars include mail forwarding, so it can just forward to the
-   Gmail inbox. A business address on the business domain reads better on a quote page.
+   There is no mailbox behind it. ImprovMX (free plan) forwards `hello@` — and, through a
+   catch-all, any other address at the domain — to `solomonmalepe8@gmail.com`. That needs these
+   DNS records at domains.co.za:
+
+   | Type | Name | Value |
+   |---|---|---|
+   | MX (priority 10) | `@` | `mx1.improvmx.com` |
+   | MX (priority 20) | `@` | `mx2.improvmx.com` |
+   | TXT | `@` | `v=spf1 include:spf.improvmx.com include:_spf.google.com ~all` |
+
+   The `_spf.google.com` part lets Gmail send *as* `hello@` (Gmail → Settings → Accounts →
+   "Send mail as", SMTP `smtp.gmail.com:587` with a Google app password). When testing
+   forwarding, send from a different account — Gmail hides mail you send to yourself.
 
    Social: there is no Instagram link anywhere. If you open an account, add a `.social-btn` to
    each footer and put the profile URL in the `sameAs` array in `index.html`.

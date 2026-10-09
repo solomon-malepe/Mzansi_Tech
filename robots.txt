@@ -1,6 +1,5 @@
 # MzansiCraft — https://www.mzansicraftstudio.co.za/
 User-agent: *
 Allow: /
-Disallow: /thank-you.html
 
 Sitemap: https://www.mzansicraftstudio.co.za/sitemap.xml
